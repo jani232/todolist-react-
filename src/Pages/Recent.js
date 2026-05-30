@@ -24,7 +24,7 @@ export default function Recent() {
   };
 
 
-    // GROUP BY DATE
+    // group by date
   const groupedTasks = tasks.reduce((acc, task) => {
     const date = task.currentDate;
 
@@ -65,7 +65,7 @@ export default function Recent() {
       {Object.keys(groupedTasks).length === 0 ? (
         <p>No tasks yet</p>
       ) : (
-        Object.keys(groupedTasks).map((date) => (
+        Object.keys(groupedTasks).sort((a, b) => new Date(b) - new Date(a)).map((date) => (
           <div key={date} className="recentCard">
 
           <div className="recentheader">

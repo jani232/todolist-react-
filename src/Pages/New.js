@@ -41,7 +41,7 @@ export default function New() {
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
 
     console.log("Form Data:", task); //usefull for debgging, we dont need it mandotory 
-    alert(`Date: ${task.currentDate}\name: ${task.taskName}\n`);
+    alert(`Date: ${task.currentDate}\nName: ${task.taskName}\n`);
 
     //cleans all inputs after submit
     setTask({
