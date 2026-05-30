@@ -9,7 +9,7 @@
 
 .header{
     height: 200px;
-    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    background: linear-gradient(135deg, #E89951, #d7d397);
     color: white;
     font-size: 50px;
     font-weight: bold;
@@ -75,7 +75,7 @@
     height: 8px;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #4f46e5, #7c3aed);
+    background: linear-gradient(to right,#E89951, #d7d397);
 }
 
 /* TEXT */
@@ -89,7 +89,7 @@
 }
 
 .card:hover h3{
-    color: #4f46e5;
+    color: #ECB65F;
 }
 
 /* MOBILE RESPONSIVE */

@@ -41,6 +41,15 @@ export default function Recent() {
    return (
     <div className="container">
 
+            <div className="buttonNew">
+            <Link to="/">
+              <button className="backButton">
+                Back
+              </button>
+            </Link>
+      
+            </div>
+
 <div className="headerRecent">
           <h2>Recent Tasks</h2>
                 </div>

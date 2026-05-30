@@ -20,7 +20,7 @@
     left: 0;
     width: 50%;
     height: 6px;   /* small line */
-    background: linear-gradient(to right, #4f46e5, #7c3aed);
+    background: linear-gradient(to right,#E89951, #d7d397);
     border-radius: 4px;
    margin-left: 25%;
     
@@ -49,8 +49,8 @@
 }
 
 .custom-input:focus {
-  border-color: #0d6efd;
-  box-shadow: 0 0 5px rgba(13,110,253,0.3);
+  border-color: #F0E76F;
+  box-shadow: #F0E76F;
 }
 
 .custom-button {
@@ -60,3 +60,60 @@
   font-weight: bold;
 }
 
+.buttonNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+.backButton,
+.recentButton {
+  width: 65px;
+  height: 50px;
+
+  background: linear-gradient(135deg, #E89951, #f0b06d);
+  border: none;
+  border-radius: 25px;
+
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+
+  box-shadow: 0 4px 12px rgba(232, 153, 81, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+
+.backButton:hover,
+.recentButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(232, 153, 81, 0.4);
+}
+
+
+
+
+.buttonNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+
+@media (max-width: 768px) {
+  .buttonNew {
+    padding: 0 15px;
+  }
+
+  .backButton,
+  .recentButton {
+    width: 60px;
+    height: 45px;
+    font-size: 13px;
+  }
+}

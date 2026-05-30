@@ -1,7 +1,8 @@
 import React ,{useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import './new.css'
+import './new.css';
+import {Link} from 'react-router-dom'
 
 
 export default function New() {
@@ -54,6 +55,19 @@ export default function New() {
   return (
 
     <div className="container" >
+      <div className="buttonNew">
+      <Link to="/">
+        <button className="backButton">
+          Back
+        </button>
+      </Link>
+
+      <Link to="/Recent">
+        <button className="recentButton">
+          Tasks
+        </button>
+      </Link>
+      </div>
       <div className="headerNew">
       <h2>Add New Task</h2>
       </div>
@@ -75,6 +89,7 @@ export default function New() {
       <Button variant="primary" type="submit">
         Submit
       </Button>
+
     </Form>
     </div>
   )
