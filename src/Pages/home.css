@@ -1,0 +1,120 @@
+.homepage{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f5f7fb, #e9ecf5);
+    padding-bottom: 40px;
+}
+
+/* HEADER */
+
+.header{
+    height: 200px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+    letter-spacing: 2px;
+}
+
+/* CARD CONTAINER */
+
+.cardbox{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* LINK */
+
+.link{
+    text-decoration: none;
+    display: flex;
+    height:300px;
+    width:300px
+}
+
+/* CARD */
+
+.card{
+    width: 270px;
+    height: 350px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+
+.card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Decorative Gradient */
+
+.card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #4f46e5, #7c3aed);
+}
+
+/* TEXT */
+
+.card h3{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover h3{
+    color: #4f46e5;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px){
+
+    .header{
+        font-size: 35px;
+        height: 150px;
+    }
+
+    .cardbox{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .card{
+        width: 90%;
+        max-width: 320px;
+        height: 220px;
+    }
+
+    .card h3{
+        font-size: 22px;
+    }
+}

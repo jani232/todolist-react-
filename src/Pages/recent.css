@@ -1,0 +1,113 @@
+.container{
+    margin-top:90px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;   
+}
+
+.headerRecent{
+    position: relative;
+    background: transparent;   /* remove box */
+    padding: 20px 25px;
+    margin: 0 auto 25px auto;
+    max-width: 600px;
+}
+
+.headerRecent::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 6px;   /* small line */
+    background: linear-gradient(to right, #4f46e5, #7c3aed);
+    border-radius: 4px;
+   margin-left: 25%;
+    
+}
+
+.recentCard{
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    width: 100%;
+    max-width:750px;
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recentCard:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+.recentCard h3{
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.recentCard p{
+    margin: 8px 0;
+    color: #555;
+}
+
+.recentheader{
+    margin-bottom: 10px;
+}
+
+.recentp{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* BUTTON */
+
+.completeButton{
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.completeButton:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.AddNew {
+    background: linear-gradient(to right, #141fea, #453ac4);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+
+
+.AddNew:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* link remove underline */
+.recentLink {
+    text-decoration: none;
+}
