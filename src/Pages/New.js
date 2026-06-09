@@ -40,7 +40,7 @@ export default function New() {
    // Saves updated tasks back into browser storage.
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
 
-    console.log("Form Data:", task); //usefull for debgging, we dont need it mandotory 
+    console.log("Form Data:", task); 
     alert(`Date: ${task.currentDate}\nName: ${task.taskName}\n`);
 
     //cleans all inputs after submit

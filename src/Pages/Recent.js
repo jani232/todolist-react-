@@ -76,9 +76,7 @@ export default function Recent() {
 
                 
                 <input
-                  type="checkbox"
-                  checked={t.status === "completed"}
-                  onChange={() => markComplete(t.id)} 
+                  type="checkbox" checked={t.status === "completed"} onChange={() => markComplete(t.id)} 
                 />
 
                 <span className="recentp">
